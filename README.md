@@ -15,7 +15,7 @@ Web app designed to increase user attendance by creating an event money pool for
 5. Upon closing the event, the event money pool is calculated and split equally among users who successfully attended the event.
 
 ## Resources Used
-..* React
-..* Redux
-..* Stripe
-..* Semantic UI
+* React
+* Redux
+* Stripe
+* Semantic UI
