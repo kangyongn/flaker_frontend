@@ -1,7 +1,7 @@
 # ~~Flaker~~
 ![](.images/landing_page_accept.png)
 
-Web app designed to increase user attendance by creating an event money pool formed from user's entry fee, which is split among users who successfully attends the event.
+Web app designed to increase user attendance by creating an event money pool formed from user's entry fee, which is split among users who successfully attends the event. [*~~Flaker~~ Backend*](https://github.com/kangyongn/flaker_backend)
 
 ## Project Aim
 1. Create a web app designed to increase user attendance to events.
