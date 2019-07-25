@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/flaker/static/css/main.dc17adc0.chunk.css",
+    "main.js": "/flaker/static/js/main.3f68013c.chunk.js",
+    "main.js.map": "/flaker/static/js/main.3f68013c.chunk.js.map",
+    "runtime~main.js": "/flaker/static/js/runtime~main.1f654e09.js",
+    "runtime~main.js.map": "/flaker/static/js/runtime~main.1f654e09.js.map",
+    "static/css/2.62db0a33.chunk.css": "/flaker/static/css/2.62db0a33.chunk.css",
+    "static/js/2.e3d608d4.chunk.js": "/flaker/static/js/2.e3d608d4.chunk.js",
+    "static/js/2.e3d608d4.chunk.js.map": "/flaker/static/js/2.e3d608d4.chunk.js.map",
+    "index.html": "/flaker/index.html",
+    "precache-manifest.595111cedf08cba0ce946362a227d98e.js": "/flaker/precache-manifest.595111cedf08cba0ce946362a227d98e.js",
+    "service-worker.js": "/flaker/service-worker.js",
+    "static/css/2.62db0a33.chunk.css.map": "/flaker/static/css/2.62db0a33.chunk.css.map",
+    "static/css/main.dc17adc0.chunk.css.map": "/flaker/static/css/main.dc17adc0.chunk.css.map",
+    "static/media/semantic.min.css": "/flaker/static/media/outline-icons.ef60a4f6.woff"
+  }
+}
