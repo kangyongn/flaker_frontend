@@ -11,7 +11,7 @@ import {CardElement, injectStripe} from 'react-stripe-elements';
 const DashboardSegment = props => {
   const handleAccept = async (entry, plan) => {
     const {token} = await props.stripe.createToken({id: props.user.current.id})
-    await fetch('http://localhost:3000/api/v1/charges', {
+    await fetch('https://flaker-backend.herokuapp.com/api/v1/charges', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ const DashboardSegment = props => {
     )
   }
 
-  const stripeUrl = `https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_EwmL3WIkrp6NYggrQouufNg2VodKcbhW&scope=read_write&redirect_uri=http://localhost:3000/api/v1/oauth/callback&state=${props.user.current.id}`
+  const stripeUrl = `https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_EwmL3WIkrp6NYggrQouufNg2VodKcbhW&scope=read_write&redirect_uri=https://flaker-backend.herokuapp.com/api/v1/oauth/callback&state=${props.user.current.id}`
 
   return (
     <React.Fragment>

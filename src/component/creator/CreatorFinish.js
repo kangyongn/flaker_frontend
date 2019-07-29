@@ -21,7 +21,7 @@ class CreatorFinish extends Component {
   }
 
   postTransfers = async (amount, id) => {
-    await fetch('http://localhost:3000/api/v1/transfers', {
+    await fetch('https://flaker-backend.herokuapp.com/api/v1/transfers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

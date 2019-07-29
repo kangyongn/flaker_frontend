@@ -23,7 +23,7 @@ class NewPlan extends Component {
 
   postCharge = async () => {
     const{token} = await this.props.stripe.createToken({id: this.props.currentUserId})
-    await fetch('http://localhost:3000/api/v1/charges', {
+    await fetch('https://flaker-backend.herokuapp.com/api/v1/charges', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ class NewPlan extends Component {
   }
 
   render() {
-    const stripeUrl = `https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_EwmL3WIkrp6NYggrQouufNg2VodKcbhW&scope=read_write&redirect_uri=http://localhost:3000/api/v1/oauth/callback&state=${this.props.currentUserId}`
+    const stripeUrl = `https://connect.stripe.com/express/oauth/authorize?response_type=code&client_id=ca_EwmL3WIkrp6NYggrQouufNg2VodKcbhW&scope=read_write&redirect_uri=https://flaker-backend.herokuapp.com/api/v1/oauth/callback&state=${this.props.currentUserId}`
 
     return (
       this.props.user.current.stripeId ?
