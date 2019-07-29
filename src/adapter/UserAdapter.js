@@ -42,7 +42,7 @@ export const postLogIn = (user) => {
 
 export const postSignUp = (user) => {
   return (dispatch) => {
-    return fetch("hhttps://flaker-backend.herokuapp.com/api/v1/users", {
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/users", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
