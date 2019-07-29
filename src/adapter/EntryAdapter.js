@@ -3,7 +3,7 @@ import {saveEntryToPlanState} from '../action/PlanAction';
 
 export const postEntry = (info, plan) => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/entries", {
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/entries", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export const postEntry = (info, plan) => {
 
 export const postInvite = (user, plan) => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/entries", {
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/entries", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export const postInvite = (user, plan) => {
 
 export const patchEntry = id => {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/v1/entries/${id}`, {
+    return fetch(`https://flaker-backend.herokuapp.com/api/v1/entries/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export const patchEntry = id => {
 
 export const patchPayout = (id, amount) => {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/v1/entries/${id}`, {
+    return fetch(`https://flaker-backend.herokuapp.com/api/v1/entries/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ export const patchPayout = (id, amount) => {
 
 export const deleteEntry = id => {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/v1/entries/${id}`, {
+    return fetch(`https://flaker-backend.herokuapp.com/api/v1/entries/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import { setUserToState } from '../action/UserAction';
 
 export const getCurrentUser = () => {
   return (dispatch) => {
-    return fetch('http://localhost:3000/api/v1/current_user', {
+    return fetch('https://flaker-backend.herokuapp.com/api/v1/current_user', {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -21,7 +21,7 @@ export const getCurrentUser = () => {
 
 export const postLogIn = (user) => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/login", {
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export const postLogIn = (user) => {
 
 export const postSignUp = (user) => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/users", {
+    return fetch("hhttps://flaker-backend.herokuapp.com/api/v1/users", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ export const postSignUp = (user) => {
 
 export const getUsers = () => {
   return (dispatch) => {
-    return fetch('http://localhost:3000/api/v1/users')
+    return fetch('https://flaker-backend.herokuapp.com/api/v1/users')
       .then(res => res.json())
       .then(users => {
         dispatch(saveUsersToState(users))

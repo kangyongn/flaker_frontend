@@ -3,7 +3,7 @@ import { savePlanToUserState } from '../action/UserAction';
 
 export const postPlan = info => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/plans", {
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/plans", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ export const postPlan = info => {
 
 export const patchPlan = id => {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/v1/plans/${id}`, {
+    return fetch(`https://flaker-backend.herokuapp.com/api/v1/plans/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export const patchPlan = id => {
 
 export const getPlans = () => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/api/v1/plans")
+    return fetch("https://flaker-backend.herokuapp.com/api/v1/plans")
       .then(res => res.json())
       .then(plans => {
         dispatch(savePlansToState(plans))
